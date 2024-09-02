@@ -1,5 +1,6 @@
 (function($) {
   'use strict';
+  console.log('testest');
 
   // 전역 변수 선언
   let canvas, ctx, particles, ww, wh;
