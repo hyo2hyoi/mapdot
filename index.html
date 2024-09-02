@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/index.js"></script>
+    <title>Document</title>
+    <style>
+        * {margin:0; padding:0;}
+        #intro {width: 100%;
+    height: 100vh;}
+
+    .homepage-banner {
+        position: fixed;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    margin-top: 0;
+    color: var(--white);
+    font-family: 'Lato';
+    font-size: 3em;
+    font-weight: bold;
+    user-select: none;
+    background: pink;
+    z-index: 10000;;}
+
+    .homepage-banner canvas {
+        position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translate3d(0, 0, 0);
+    user-select: none;
+    }
+
+    .homepage-banner .hidden-canvas {
+        display: none;
+    }
+    
+
+    @keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="intro">
+        <div class="homepage-section homepage-banner">
+            <div class="banner-container">
+              <canvas id="banner-scene" data-copy="Gradients Masks?"></canvas>
+              <canvas id="banner-scene-brackets"></canvas>
+              <canvas id="banner-text" class="hidden-canvas"></canvas>
+              <canvas id="banner-brackets" class="hidden-canvas"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
