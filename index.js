@@ -8,7 +8,7 @@
 
   // 이미지 불러오기
   let image = new Image();
-  image.src = '/img/mapimg.png'; // 여기에 실제 이미지 경로를 넣어주세요.
+  image.src = 'img/mapimg.png'; // 여기에 실제 이미지 경로를 넣어주세요.
 
   // 캔버스 및 크기 설정
   function initScene() {
